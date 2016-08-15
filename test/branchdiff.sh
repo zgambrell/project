@@ -2,7 +2,7 @@
 
 var=$(git diff origin/staging origin/master 2>&1)
 echo $var
-if [ $var == "" ]
+if [ "$var" == "" ]
 then
     echo branches are equal
 else
