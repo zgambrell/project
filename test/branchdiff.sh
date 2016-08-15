@@ -1,7 +1,7 @@
 #!/bin/bash
 
 git diff origin/staging origin/master
-if [ $? -ne 0 ]
+if [ $? -ne 1 ]
 then
     echo branches are equal
 else
